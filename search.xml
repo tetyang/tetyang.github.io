@@ -11,7 +11,19 @@
 <p>尽量让每一个类对软件提供的某一部分功能负责，并让这个责任完全被类封装。</p>
 <p>这个原则的主要目标是降低复杂性。不需要为一个只有200行左右代码的程序发明一个复杂的设计。把十几个方法做得漂亮，就可以了。但当程序变得很大的时候问题就来了，类会变得非常巨大，人脑已经不能记住其中的细节，保持对代码的控制会很难。此外，如果一个类负责的功能太多的话，那么每次其中一个功能发生变化时，都必须对它进行更改。在这样做的同时，就会有破坏类的其他功能部分的风险。</p>
 <p>为了解决这个问题，可以把一个类分成多个部分，让每个部分负责一个单一的功能。</p>
-<h2 id="开闭原则"><a href="#开闭原则" class="headerlink" title="开闭原则"></a>开闭原则</h2><h2 id="里氏替换原则"><a href="#里氏替换原则" class="headerlink" title="里氏替换原则"></a>里氏替换原则</h2><h2 id="接口隔离原则"><a href="#接口隔离原则" class="headerlink" title="接口隔离原则"></a>接口隔离原则</h2><h2 id="依赖反转原则"><a href="#依赖反转原则" class="headerlink" title="依赖反转原则"></a>依赖反转原则</h2>]]></content>
+<h2 id="开闭原则"><a href="#开闭原则" class="headerlink" title="开闭原则"></a>开闭原则</h2><blockquote>
+<p>类应该对扩展开放，但对修改关闭。</p>
+</blockquote>
+<h2 id="里氏替换原则"><a href="#里氏替换原则" class="headerlink" title="里氏替换原则"></a>里氏替换原则</h2><blockquote>
+<p>在扩展类时，保证在不破坏客户端代码的情况下传递子类的对象来代替父类的对象。</p>
+</blockquote>
+<h2 id="接口隔离原则"><a href="#接口隔离原则" class="headerlink" title="接口隔离原则"></a>接口隔离原则</h2><blockquote>
+<p>不应该强迫客户端依赖于他们不使用的方法。</p>
+</blockquote>
+<h2 id="依赖反转原则"><a href="#依赖反转原则" class="headerlink" title="依赖反转原则"></a>依赖反转原则</h2><blockquote>
+<p>高阶类不应该依赖于低阶类,两者都应该依赖于抽象。抽象不应该依赖于细节,细节应该依赖于抽象。</p>
+</blockquote>
+]]></content>
       <categories>
         <category>技术</category>
       </categories>
