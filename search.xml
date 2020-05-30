@@ -63,22 +63,21 @@
     <url>/tetyang.github.io/2020/04/01/Java%E7%B1%BB%E5%9E%8B%E6%93%A6%E9%99%A4%E6%9C%BA%E5%88%B6%E8%A7%A3%E9%87%8A/</url>
     <content><![CDATA[<h1 id="Java泛型的实现原理"><a href="#Java泛型的实现原理" class="headerlink" title="Java泛型的实现原理"></a>Java泛型的实现原理</h1><p>编译器在将泛型的代码转换成虚拟机能识别的字节码时，有两种机制可以选择：<br>1.代码专化（Code specialization）</p>
 <blockquote>
-<p>balabala </p>
+<p>编译器为一个泛型类的每一种实例提供独有的表示。</p>
 </blockquote>
 <p>2.代码共享（Code sharing)</p>
 <blockquote>
-<p>balabala</p>
+<p>编译器为一个泛型类的每一种实例提供统一的表示方式,在必要的时候进行类型检查和转化。</p>
 </blockquote>
 <p>C++的泛型采用了前者，而Java采用了后者，即Java的编译器为每一个泛型类(或方法)提供了唯一的字节码表示，并把该泛型类(或方法)的每一个不同的实例化和这个唯一的字节码表示对应，实现这种对应的机制叫<strong>类型擦除（type erasure）</strong></p>
-<h1 id="理解类型擦除"><a href="#理解类型擦除" class="headerlink" title="理解类型擦除"></a>理解类型擦除</h1><h1 id="类型擦除示例"><a href="#类型擦除示例" class="headerlink" title="类型擦除示例"></a>类型擦除示例</h1><p>$sin^2\theta + cos^2\theta = 1$</p>
-]]></content>
+<h1 id="理解类型擦除"><a href="#理解类型擦除" class="headerlink" title="理解类型擦除"></a>理解类型擦除</h1><h1 id="类型擦除示例"><a href="#类型擦除示例" class="headerlink" title="类型擦除示例"></a>类型擦除示例</h1>]]></content>
       <categories>
         <category>技术</category>
       </categories>
       <tags>
         <tag>Java</tag>
         <tag>泛型</tag>
-        <tag>语言原理</tag>
+        <tag>编程语言原理</tag>
       </tags>
   </entry>
 </search>
